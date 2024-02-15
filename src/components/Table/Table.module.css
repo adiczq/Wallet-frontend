@@ -128,11 +128,11 @@ tr.total-row td {
 }
 
 tr.total-row:nth-child(odd) td:last-child {
-  color: var(--color-action-bad);
+  color: var(--color-action-ok);
 }
 
 tr.total-row:nth-child(even) td:last-child {
-  color: var(--color-action-ok);
+  color: var(--color-action-bad);
 }
 .container {
   display: flex;
