@@ -1,0 +1,117 @@
+.diagramWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.filterContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Circe';
+}
+
+.selectButton {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('../../assets/icons/Vector\ 19.svg') no-repeat right center;
+  background-position: calc(100% - 20px) center;
+  fill: black;
+  width: 340px;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px;
+  padding: 0 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.selectButton:hover {
+  transform: scale(1.02);
+  font-weight: bold;
+  transition: font-weight 0.3s, transform 0.3s;
+}
+
+.diagramTab {
+  position: relative;
+  padding: 0 20px;
+}
+
+.title {
+  margin-top: 20px;
+  justify-content: center;
+  min-width: 280px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Poppins Regular';
+}
+.statisticsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    width: 100%;
+  }
+  .diagramTab {
+    padding: 0 32px;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .diagramWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .statisticsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .filterContainer {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 30px;
+    gap: 14px;
+  }
+
+  .selectButton {
+    width: 160px;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .diagramWrapper {
+    margin-top: 0;
+  }
+  .diagramTab {
+    width: 65vw;
+    padding: 0 16px 0 69px;
+  }
+
+  .filterContainer {
+    gap: 28px;
+  }
+
+  .selectButton {
+    width: 182px;
+  }
+  .title {
+    margin: 0;
+  }
+}

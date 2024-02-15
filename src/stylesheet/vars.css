@@ -1,0 +1,25 @@
+:root {
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-dimmed: #bdbdbd;
+  --color-action-ok: #24cca7;
+  --color-action-bad: #ff6596;
+  --color-brand: #4a56e2;
+  --color-form: #e0e0e0;
+  --background-primary: #ffffff66;
+  --background-dropdown: #ffffffb2;
+  --background-register: #e7eaf2;
+  --background-behind-modal: rgba(0, 0, 0, 0.25);
+  --background-icon: #6e78e8;
+  --transitionDefault: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --breakpointMobile: 320px;
+  --breakpointTablet: 768px;
+  --breakpointDesktop: 1280px;
+  --progressBar-background: #eee;
+  --progressBar-weak: #ff0400;
+  --progressBar-fair: #ffcc00;
+  --progressBar-good: #00b3ff;
+  --progressBar-strong: #00ff59;
+  --background-btn: #6495ED;
+
+}
