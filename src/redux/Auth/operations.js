@@ -1,8 +1,9 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://orange-red-kangaroo-ring.cyclic.app/api';
+// axios.defaults.baseURL = 'https://orange-red-kangaroo-ring.cyclic.app/api';
 // axios.defaults.baseURL = 'http://localhost:3001/api';
+axios.defaults.baseURL = 'https://wallet-backend.fly.dev/';
 
 const setAuthToken = token => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
