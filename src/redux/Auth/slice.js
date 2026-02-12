@@ -51,10 +51,10 @@ const slice = createSlice({
       state.isRefreshing = false;
     },
     [registerUser.rejected]: (state, action) => {
-      state.error = action.payload.data.message;
+      state.error = action.payload?.message || 'Registration failed';
     },
     [loginUser.rejected]: (state, action) => {
-      state.error = action.payload.data.message;
+      state.error = action.payload?.message || 'Login failed';
     },
   },
 });
